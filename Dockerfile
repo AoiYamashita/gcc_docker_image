@@ -10,4 +10,7 @@ ENV TZ=Asia/Tokyo
 WORKDIR /root
 
 #------------ install gcc
-RUN apt install build-essential
+RUN apt-get install build-essential -y
+
+#------------ install git
+RUN apt-get install git -y
